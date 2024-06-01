@@ -21,7 +21,7 @@ char *DataSegment::SerializeToCharArray() {
       return nullptr;
     }
   }
-
+//
   memcpy(final_packet_, &seq_number_, sizeof(seq_number_));
 
   memcpy(final_packet_ + 4, &ack_number_, sizeof(ack_number_));
